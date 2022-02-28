@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap");
+
+body {
+  font-family: "Roboto", "arial";
+  margin: 0;
+  padding: 0;
+}
+.bg__img {
+  background-image: url("../expandingCards/images/1.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+.img__container {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 0;
+  position: absolute;
+}
+.text__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.text__container .user__greet {
+  z-index: 1;
+  color: #fff;
+  font-size: 4.4em;
+  text-transform: uppercase;
+  font-weight: light;
+  position: absolute;
+}
+.text__container .user__timezone {
+  z-index: 1;
+  color: #fff;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  font-weight: light;
+  position: relative;
+  top: -45px;
+}
+@media (min-width: 1000px) {
+  .text__container .user__greet {
+    font-size: 5.8em;
+  }
+  .text__container .user__timezone {
+    font-size: 1.5em;
+    top: -55px;
+  }
+}
+@media (max-width: 600px) {
+  .text__container .user__greet {
+    font-size: 3em;
+  }
+  .text__container .user__timezone {
+    font-size: 0.8em;
+    top: -35px;
+  }
+}
+@media (max-width: 480px) {
+  .text__container .user__greet {
+    font-size: 2.2em;
+  }
+  .text__container .user__timezone {
+    font-size: 0.6em;
+    top: -30px;
+  }
+}
+@media (max-width: 360px) {
+  .text__container .user__greet {
+    font-size: 1.8em;
+  }
+  .text__container .user__timezone {
+    font-size: 0.6em;
+    top: -25px;
+  }
+}
